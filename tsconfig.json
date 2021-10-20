@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "commonjs",  
+    "allowJs": true, 
+    "strict": true,
+    "baseUrl": ".",
+    "outDir": "dist",
+    "paths": {
+      "@core/*": ["./src/core/*"],
+      "@controllers/*": ["./src/controllers/*"],
+      "@infra/*": ["./src/infra/*"],
+      "@adapters/*": ["./src/infra/adapters/*"],
+      "@presenters/*": ["./src/infra/presenters/*"],
+      "@utils/*":["./src/utils/*"],
+    },
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types",
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+  }
+}
